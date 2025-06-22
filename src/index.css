@@ -1,13 +1,134 @@
-body {
+/* GLOBAL RESET */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* BODY STYLING */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* APP CONTAINER */
+.App {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HERO / HEADER SECTION */
+.hero {
+  background: linear-gradient(135deg, #6a0dad, #9d4edd);
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* SECTIONS */
+section {
+  background-color: white;
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #6a0dad;
+  border-left: 5px solid #6a0dad;
+  padding-left: 10px;
+}
+
+/* SKILLS */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.skill-list li {
+  background: #eee;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.skill-list li:hover {
+  background: #dcdcdc;
+}
+
+/* PROJECTS */
+.project-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-left: 5px solid #6a0dad;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 5px 15px rgba(106, 13, 173, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #5a189a;
+}
+
+/* LINKS */
+a {
+  color: #5a189a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .skill-list {
+    flex-direction: column;
+  }
 }
