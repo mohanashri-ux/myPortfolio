@@ -6,12 +6,11 @@ function Skills() {
     <section>
       <h2>Skills</h2>
       <ul className="skill-list">
-        {profile.skills.map((skill, idx) => (
-          <li key={idx}>{skill}</li>
+        {profile.skills.map((skill, i) => (
+          <li key={i}>{skill}</li>
         ))}
       </ul>
     </section>
   );
 }
-
 export default Skills;

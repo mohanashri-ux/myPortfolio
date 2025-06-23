@@ -1,8 +1,18 @@
-const Experience = () => (
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Web Development Trainee</strong> – Prodigy Info Tech (May–June 2024)</p>
-    <p>Worked on a web app converting Indian Sign Language to English using vanilla JS and Bootstrap.</p>
-  </section>
-);
+import React from 'react';
+import { profile } from '../data/profile';
+
+function Experience() {
+  return (
+    <section>
+      <h2>Experience</h2>
+      {profile.experience.map((exp, i) => (
+        <div key={i}>
+          <h3>{exp.title} – {exp.company}</h3>
+          <p><i>{exp.duration}</i></p>
+          <p>{exp.details}</p>
+        </div>
+      ))}
+    </section>
+  );
+}
 export default Experience;

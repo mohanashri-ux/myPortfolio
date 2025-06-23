@@ -1,12 +1,11 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { profile } from '../data/profile';
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <motion.section
-      className="hero"
-      initial={{ opacity: 0, y: -50 }}
+    <motion.section className="hero"
+      initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
@@ -16,5 +15,4 @@ function Hero() {
     </motion.section>
   );
 }
-
 export default Hero;

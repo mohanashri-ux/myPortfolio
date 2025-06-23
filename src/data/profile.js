@@ -15,13 +15,10 @@ export const profile = {
     {
       title: "Meta-Hush",
       description: "Pet service platform using Django & Firebase. Supports appointments, product purchases, and pet adoption.",
-      tech: ["Django", "Firebase", "HTML", "CSS", "JS"]
+      tech: ["Django", "Firebase", "HTML", "CSS", "JS"],
+      github: "https://github.com/mohanashri-ux/metahush.git"
     },
-    {
-      title: "Sign Language Translator",
-      description: "Translates Indian Sign Language into English using JavaScript and Bootstrap.",
-      tech: ["JavaScript", "Bootstrap"]
-    },
+   
     {
       title: "Task Engine",
       description: "Python-based workflow automation similar to Apache Airflow.",
@@ -33,7 +30,7 @@ export const profile = {
       degree: "B.Tech - Information Technology",
       institution: "R.M.D. Engineering College",
       year: "2022 – Present",
-      score: "8.2 CGPA"
+      score: "8.21 CGPA"
     },
     {
       degree: "HSC",
@@ -53,7 +50,7 @@ export const profile = {
       title: "Web Development Trainee",
       company: "Prodigy InfoTech",
       duration: "May – June 2024",
-      details: "Worked on frontend using HTML, CSS, JS. Built sign language translator web app."
+      details: "Gained hands-on experience in frontend development using React.js.Built a responsive and dynamic personal portfolio website showcasing skills, projects, and achievements."
     }
   ],
   certificates: [

@@ -1,11 +1,23 @@
-const Contact = () => (
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mohanashri.0101@gmail.com">mohanashri.0101@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/mohana-shri-81ba10256" target="_blank">mohana-shri-81ba10256</a></p>
-    <p>GitHub: <a href="https://github.com/mohanashri-ux" target="_blank">mohanashri-ux</a></p>
-    <p>LeetCode: <a href="https://leetcode.com/u/mohana_shri/" target="_blank">mohana_shri</a></p>
-    <p>Phone: 9344062931 | Chennai, India</p>
-  </section>
-);
+import React from 'react';
+import { profile } from '../data/profile';
+
+function Contact() {
+  return (
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href={`mailto:${profile.email}`}>{profile.email}</a></p>
+      <p>Phone: {profile.phone}</p>
+      <p>Location: {profile.location}</p>
+      <p>
+        GitHub: <a href={profile.github} target="_blank" rel="noopener noreferrer">{profile.github}</a>
+      </p>
+      <p>
+        LinkedIn: <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">{profile.linkedin}</a>
+      </p>
+      <p>
+        LeetCode: <a href={profile.leetcode} target="_blank" rel="noopener noreferrer">{profile.leetcode}</a>
+      </p>
+    </section>
+  );
+}
 export default Contact;
